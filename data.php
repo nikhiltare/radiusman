@@ -1,10 +1,4 @@
-<?php
-////////////////////////////////////////////////////////////////////
-// ESTE EJEMPLO SE DESCARGO DE www.tech-nico.com ///////////////////
-// Creado por: Nicolas Daitsch. Guatrache. La Pampa ////////////////
-// Contacto: administracion@tech-nico.com //////////////////////////
-// RouterOS API: Grafica en tiempo real usando highcharts //////////
-//////////////////////////////////////////////////////////////////// ?>
+
 <?php require_once('api_mt_include2.php'); ?>
 <?php
 $ipRouteros = "1XX.71.4X.2X0";
@@ -33,7 +27,7 @@ $interface = $_GET["interface"]; //"<ether1(WAN1)>";
 				echo $ARRAY['!trap'][0]['message'];	 
 			} 
 	}else{
-		echo "<font color='#ff0000'>La conexion ha fallado. Verifique si el Api esta activo.</font>";
+		echo "<font color='#ff0000'>connect and test your data for graph.</font>";
 	}
 	$API->disconnect();
 
